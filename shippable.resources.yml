@@ -11,7 +11,7 @@ resources:
     type: image
     integration: DockerHub
     pointer:
-      sourceName: ttrahan/javahelloworld
+      sourceName: ampoc/javahelloworld
       isPull: false
     seed:
       versionName: github-beta.1
