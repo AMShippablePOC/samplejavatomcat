@@ -21,7 +21,7 @@ build:
 
 integrations:
   hub:
-    - integrationName: ttrahan-dh
+    - integrationName: DockerHub
       type: docker
 
   notifications:
