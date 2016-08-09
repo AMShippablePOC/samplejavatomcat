@@ -9,7 +9,7 @@ resources:
 # Docker Image
   - name: hello-img
     type: image
-    integration: ttrahan-dh
+    integration: DockerHub
     pointer:
       sourceName: ttrahan/javahelloworld
       isPull: false
@@ -32,9 +32,9 @@ resources:
 # TEST resources
 
 # add TEST env - AWS cluster
-  - name: hello-env-test-ecs
+  - name: fimt-aws-dev-acct
     type: cluster
-    integration: ttrahan-aws
+    integration: fimt-aws-dev-acct
     pointer:
       sourceName : "demo-shippable-ecs-test"
       region: "us-east-1"
@@ -69,7 +69,7 @@ resources:
 # add PROD env - AWS cluster
   - name: hello-env-prod-ecs
     type: cluster
-    integration: ttrahan-aws
+    integration: fimt-aws-dev-acct
     pointer:
       sourceName : "demo-shippable-ecs"
       region: "us-east-1"
