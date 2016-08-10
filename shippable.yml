@@ -17,7 +17,7 @@ build:
     - sed -i "s/{PASSWORD}/$PASSWORD/" .m2/settings.xml
     - cat .m2/settings.xml
     - ls $SHIPPABLE_BUILD_DIR
-    - mvn -q -B -s .m2/settings.xml -U clean cobertura:cobertura # deploy
+    - mvn -q -B -s .m2/settings.xml -U clean cobertura:cobertura install
     - ls $SHIPPABLE_BUILD_DIR
     - ls $SHIPPABLE_BUILD_DIR/target
     - docker build -t amshippablepoc/javahelloworld:$BRANCH.$BUILD_NUMBER .
