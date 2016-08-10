@@ -77,14 +77,14 @@ resources:
       - hello
 
 # add PROD env - AWS cluster
-  - name: hello-env-gke
-    type: cluster
-    integration: ttrahan-gke
-    pointer:
-      sourceName : "demo-shippable-gke"
-      region: "us-east-1"
-    flags:
-      - hello
+#  - name: hello-env-gke
+#    type: cluster
+#    integration: ttrahan-gke
+#    pointer:
+#      sourceName : "demo-shippable-gke"
+#      region: "us-east-1"
+#    flags:
+#      - hello
 
 # PROD replica controller
   - name: hello-scaler-prod
