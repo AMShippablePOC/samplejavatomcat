@@ -13,13 +13,13 @@
 		<docker.image.prefix>amshippablepoc</docker.image.prefix>
 	</properties>
 
-	<distributionManagement>
+	<!--<distributionManagement>
 			<snapshotRepository>
 					<id>snapshots</id>
 					<name>shipdemo-snapshots</name>
 					<url>https://amshippablepoc.jfrog.io/amshippabledemo/libs-snapshot-local</url>
 			</snapshotRepository>
-	</distributionManagement>
+	</distributionManagement>-->
 
 	<dependencies>
 		<dependency>
