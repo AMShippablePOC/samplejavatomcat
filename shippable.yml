@@ -15,7 +15,7 @@ build:
   ci:
     - mkdir -p shippable/testresults && mkdir -p shippable/codecoverage
     - sed -i "s/{PASSWORD}/$PASSWORD/" .m2/settings.xml
-    #- mvn -q -B -s .m2/settings.xml -U clean cobertura:cobertura deploy
+    - mvn -q -B -s .m2/settings.xml -U clean cobertura:cobertura deploy
     - docker build -t amshippablepoc/javahelloworld:$BRANCH.$BUILD_NUMBER .
     - docker push amshippablepoc/javahelloworld:$BRANCH.$BUILD_NUMBER
 
