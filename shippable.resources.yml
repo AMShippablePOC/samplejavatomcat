@@ -36,7 +36,7 @@ resources:
     type: cluster
     integration: fimt-aws-dev-acct
     pointer:
-      sourceName : "demo-shippable-ecs-test"
+      sourceName : "AMShippablePOC"
       region: "us-east-1"
     flags:
       - hello
@@ -71,7 +71,7 @@ resources:
     type: cluster
     integration: fimt-aws-dev-acct
     pointer:
-      sourceName : "demo-shippable-ecs"
+      sourceName : "AMShippablePOC"
       region: "us-east-1"
     flags:
       - hello
