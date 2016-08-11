@@ -29,7 +29,7 @@ jobs:
     type: deploy
     steps:
       - IN: hello-man
-      - IN: hello-env-test-ecs
+      - IN: fimt-aws-dev-acct
       - IN: hello-params-test
         applyTo: hello-img
       - IN: trigger-deploy-test
@@ -38,37 +38,37 @@ jobs:
       - hello
 
 # PROD deployment - Amazon ECS
-  - name: hello-prod-ecs
-    type: deploy
-    steps:
+#  - name: hello-prod-ecs
+#    type: deploy
+#    steps:
       # - IN: demo-rel
       #   trigger: false
       #   versionName: v1.0.2
-      - IN: hello-test-ecs
-        switch: off
-      - IN: hello-env-prod-ecs
-      - IN: hello-params-prod
-        applyTo: hello-img
-      - IN: hello-scaler-prod
-      - IN: trigger-deploy-prod
-      - TASK: managed
-    flags:
-      - hello
+#      - IN: hello-test-ecs
+#        switch: off
+#      - IN: hello-env-prod-ecs
+#      - IN: hello-params-prod
+#        applyTo: hello-img
+#      - IN: hello-scaler-prod
+#      - IN: trigger-deploy-prod
+#      - TASK: managed
+#    flags:
+#      - hello
 
 # alternatl deployment - Google GKE
-  - name: hello-prod-gke
-    type: deploy
-    steps:
+#  - name: hello-prod-gke
+#    type: deploy
+#    steps:
       # - IN: demo-rel
       #   trigger: false
       #   versionName: v1.0.2
-      - IN: hello-test-ecs
-        switch: off
-      - IN: hello-env-gke
-      - IN: hello-params-prod
-        applyTo: hello-img
-      - IN: hello-scaler-prod
-      - IN: trigger-deploy-prod
-      - TASK: managed
-    flags:
-      - hello
+#      - IN: hello-test-ecs
+#        switch: off
+#      - IN: hello-env-gke
+#      - IN: hello-params-prod
+#        applyTo: hello-img
+#      - IN: hello-scaler-prod
+#      - IN: trigger-deploy-prod
+#      - TASK: managed
+#    flags:
+#      - hello
