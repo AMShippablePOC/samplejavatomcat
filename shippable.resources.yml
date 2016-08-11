@@ -67,7 +67,7 @@ resources:
 # PROD resources
 
 # add PROD env - AWS cluster
-  - name: hello-env-prod-ecs
+  - name: fimt-aws-dev-acct
     type: cluster
     integration: fimt-aws-dev-acct
     pointer:
