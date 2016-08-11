@@ -11,7 +11,7 @@
 	<center>
 		<h2>Hello World</h2>
 		<h3>
-			<label for="name">Enter your name:</label>
+			<label for="name">Enter your names:</label>
 			<input name="name" id="nameInput" type="text">
 		  <p></p>
       <%-- <a href='' onclick="this.href='hello?name='+document.getElementById('nameInput').value">submit</a> --%>
