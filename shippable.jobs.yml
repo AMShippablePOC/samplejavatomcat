@@ -63,7 +63,7 @@ jobs:
 #        trigger: false
 #        versionName: v1.0.2
       - IN: hello-man
-      - IN: hello-test-ecs
+#      - IN: hello-test-ecs
         switch: off
       - IN: hello-env-gke
       - IN: hello-params-prod
