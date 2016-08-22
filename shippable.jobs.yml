@@ -59,9 +59,9 @@ jobs:
   - name: hello-prod-gke
     type: deploy
     steps:
-       - IN: demo-rel
-         trigger: false
-         versionName: v1.0.2
+      - IN: demo-rel
+        trigger: false
+        versionName: v1.0.2
       - IN: hello-test-ecs
         switch: off
       - IN: hello-env-gke
