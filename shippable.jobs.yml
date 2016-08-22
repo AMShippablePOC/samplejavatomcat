@@ -55,7 +55,7 @@ jobs:
 #    flags:
 #      - hello
 
- alternatl deployment - Google GKE
+# alternatl deployment - Google GKE
   - name: hello-prod-gke
     type: deploy
     steps:
