@@ -76,7 +76,7 @@ resources:
 #    flags:
 #      - hello
 
- add PROD env - AWS cluster
+# add PROD env - AWS cluster
   - name: hello-env-gke
     type: cluster
     integration: GCEIntegration
