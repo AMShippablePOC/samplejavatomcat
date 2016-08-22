@@ -25,17 +25,17 @@ jobs:
 #         bump: patch
 
 # TEST deployment to Amazon ECS
-  - name: hello-test-ecs
-    type: deploy
-    steps:
-      - IN: hello-man
-      - IN: fimt-aws-dev-acct
-      - IN: hello-params-test
-        applyTo: hello-img
-      - IN: trigger-deploy-test
-      - TASK: managed
-    flags:
-      - hello
+#  - name: hello-test-ecs
+#    type: deploy
+#    steps:
+#      - IN: hello-man
+#      - IN: fimt-aws-dev-acct
+#      - IN: hello-params-test
+#        applyTo: hello-img
+#      - IN: trigger-deploy-test
+#      - TASK: managed
+#    flags:
+#      - hello
 
 # PROD deployment - Amazon ECS
 #  - name: hello-prod-ecs
@@ -62,6 +62,7 @@ jobs:
 #      - IN: demo-rel
 #        trigger: false
 #        versionName: v1.0.2
+      - IN: hello-man
       - IN: hello-test-ecs
         switch: off
       - IN: hello-env-gke
