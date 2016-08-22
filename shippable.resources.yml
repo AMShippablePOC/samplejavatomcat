@@ -87,27 +87,27 @@ resources:
       - hello
 
 # PROD replica controller
-#  - name: hello-scaler-prod
-#    type: replicas
-#    version:
-#      count: 2
-#    flags:
-#      - hello
+  - name: hello-scaler-prod
+    type: replicas
+    version:
+      count: 2
+    flags:
+      - hello
 
 # Docker Image Options for VISUALIZER
-#  - name: hello-img-opts-prod
-#    type: dockerOptions
-#    version:
-#      memory: 512
-#      cpuShares: 512
-#    flags:
-#      - hello
+  - name: hello-img-opts-prod
+    type: dockerOptions
+    version:
+      memory: 512
+      cpuShares: 512
+    flags:
+      - hello
 
 # env vars for VISUALIZER
-#  - name: hello-params-prod
-#    type: params
-#    version:
-#      params:
-#        ENVIRONMENT: "prod"
-#    flags:
-#      - hello
+  - name: hello-params-prod
+    type: params
+    version:
+      params:
+        ENVIRONMENT: "prod"
+    flags:
+      - hello
