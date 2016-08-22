@@ -32,35 +32,35 @@ resources:
 # TEST resources
 
 # add TEST env - AWS cluster
-  - name: fimt-aws-dev-acct
-    type: cluster
-    integration: fimt-aws-dev-acct
-    pointer:
-      sourceName : "AMShippablePOC"
-      region: "us-east-1"
-    flags:
-      - hello
+#  - name: fimt-aws-dev-acct
+#    type: cluster
+#    integration: fimt-aws-dev-acct
+#    pointer:
+#      sourceName : "AMShippablePOC"
+#      region: "us-east-1"
+#    flags:
+#      - hello
 
 # Docker Image Options for VISUALIZER
-  - name: hello-img-opts-test
-    type: dockerOptions
-    version:
-      memory: 512
-      cpuShares: 512
-      portMappings:
-        - 8080:8080
-      publishAllPorts : true
-    flags:
-      - hello
+#  - name: hello-img-opts-test
+#    type: dockerOptions
+#    version:
+#      memory: 512
+#      cpuShares: 512
+#      portMappings:
+#        - 8080:8080
+#      publishAllPorts : true
+#    flags:
+#      - hello
 
 # env vars for VISUALIZER
-  - name: hello-params-test
-    type: params
-    version:
-      params:
-        ENVIRONMENT: "test"
-    flags:
-      - hello
+#  - name: hello-params-test
+#    type: params
+#    version:
+#      params:
+#        ENVIRONMENT: "test"
+#    flags:
+#      - hello
 
 ################################
 
