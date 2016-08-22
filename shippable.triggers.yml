@@ -5,9 +5,9 @@ triggers:
       message: 'testing trigger in test - 2'
     flags:
       - hello
-#  - name: trigger-deploy-prod
-#    type: trigger
-#    version:
-#      message: 'testing trigger in prod'
-#    flags:
-#      - hello
+  - name: trigger-deploy-prod
+    type: trigger
+    version:
+      message: 'testing trigger in prod'
+    flags:
+      - hello
