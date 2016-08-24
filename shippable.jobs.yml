@@ -70,7 +70,6 @@ jobs:
         applyTo: hello-img
       - IN: hello-scaler-prod
       - IN: trigger-deploy-prod
-      - IN: trigger-javahello-pipeline
       - TASK: managed
     flags:
       - hello
