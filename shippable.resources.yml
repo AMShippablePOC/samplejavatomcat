@@ -82,7 +82,7 @@ resources:
     integration: GCEIntegration
     pointer:
       sourceName : "demo-shippable-gke"
-      region: "us-east-1"
+      region: "us-east1-b"
     flags:
       - hello
 
